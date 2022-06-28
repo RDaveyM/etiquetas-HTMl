@@ -1,0 +1,218 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family:'Roboto',sans-serif;
+    margin: 0;
+}
+
+h1{font-size: 3.5em;}
+h2{font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+ul {list-style-type: none;}
+
+button{
+    font-size: 1.5em ;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border:1px solid rgb(0,0,0,0.5);
+    box-shadow: 2px 2px 10px rgb(0,0,0,0.5) ;
+    color:white;
+    background-color: red ;
+}
+ button:hover{
+    background-color: rgb(136, 10, 10) ;
+ }
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+header {
+    background-color: rgb(245,245,245);
+}
+
+header .logo{
+    margin: 0;
+    padding:25px 30px ;
+    font-weight: bold ;
+    color:rgb(210, 14, 14);
+    font-size: 1.6em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align:center;
+    padding-bottom: 25px;
+}
+header a{
+    padding: 5px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+.color-acento{
+    color:rgb(211, 14, 14); 
+} 
+
+header a:hover{
+    color: rgb(211, 14, 14);
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image:linear-gradient(
+        0deg,
+        rgb(0,0,0,0.5),
+        rgb(0,0,0,0.5)
+     )
+      ,url("media/lei-geral-de-proteção-de-dados.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center center;
+}
+
+#Somos-ProNow .container{
+  text-align: center;
+  padding: 200px 10px;
+  
+}
+
+#Our-programs{
+    text-align: center;
+    background-color: rgb(38, 37, 37);
+    color:rgb(246, 240, 240)
+
+}  
+
+#Our-programs .container{
+    padding: 150px 15px;
+}
+
+#Our-programs h2{
+   margin-top: 0;
+   font-size: 3.5em;
+}
+
+
+#Our-programs p{
+   display: none;
+}
+
+#Our-programs .letter{
+    background-size: cover;
+    background-position: center center;
+    padding: 60px;
+    margin: 20px;
+    border-radius: 12px;
+} 
+
+.letter:first-child{
+    background-image:linear-gradient(
+        0deg,
+        rgb(0,0,0,0.5),
+        rgb(0,0,0,0.5)
+     )
+      ,url("media/shutterstock_1610721214-min.jpg");
+}
+
+.letter:nth-child(2){
+    background-image:linear-gradient(
+        0deg,
+        rgb(0,0,0,0.5),
+        rgb(0,0,0,0.5)
+     )
+      ,url("media/frontend.webp");
+}
+
+.letter:nth-child(3){
+    background-image:linear-gradient(
+        0deg,
+        rgb(0,0,0,0.5),
+        rgb(0,0,0,0.5)
+     )
+      ,url("media/python.webp");
+}
+
+#features .container{
+    text-align: center;
+    padding: 170px 15px;
+
+}
+#features li{
+    margin: 15px 0px;
+    font-weight: bold;
+}
+
+#end{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(38, 37, 37);
+    color: white;
+    height: 50vh;
+}
+
+#end h2{
+    font-size: 5vw;
+}
+#end button{
+    font-size: 3vw;
+}
+
+footer{
+    background-color: rgb(225,225,225);
+}
+
+footer p{
+    margin: 0px;
+    color: rgb(100,100,100);
+}
+
+footer .container{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (min-width: 720px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;   
+    }
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;  
+        padding-right: 20px;
+    }
+
+    
+}
