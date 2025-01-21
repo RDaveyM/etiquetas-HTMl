@@ -92,9 +92,19 @@ header a:hover{
       background-position: center center;
 }
 
+#Somos-ProNow {
+    display: flex;
+    
+    
+}
+
+
 #Somos-ProNow .container{
-  text-align: center;
+  max-width: 800px;
+  flex-direction: column;
   padding: 200px 10px;
+  width: 60%;
+ 
   
 }
 
@@ -183,7 +193,7 @@ header a:hover{
 }
 
 footer{
-    background-color: rgb(225,225,225);
+    background-color: rgb(245, 245, 245);
 }
 
 footer p{
@@ -215,4 +225,22 @@ footer .container{
     }
 
     
+}
+
+
+
+#img-container {
+    width: 100%;
+    border-radius: 30px;
+    transition: transform 0.3s ease;
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    padding: 10px;
+    overflow: hidden;
+    
+}
+
+#img-container:hover {
+    transform: scale(1.1);
 }
