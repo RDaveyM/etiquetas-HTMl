@@ -27,6 +27,7 @@ button{
     color:white;
     background-color: red ;
 }
+
  button:hover{
     background-color: rgb(136, 10, 10) ;
  }
@@ -35,9 +36,10 @@ button{
     max-width: 1400px;
     margin: auto;
 }
-
 header {
     background-color: rgb(245,245,245);
+    z-index: 1000;
+    position: relative;
 }
 
 header .logo{
@@ -80,32 +82,43 @@ header a:hover{
     text-align: center;
     flex-direction: column;
     height: 90vh;
-    color: white;
     background-image:linear-gradient(
         0deg,
         rgb(0,0,0,0.5),
         rgb(0,0,0,0.5)
      )
-      ,url("media/lei-geral-de-proteção-de-dados.jpg");
+      ,url("https://tecnologia-informatica.com/wp-content/uploads/2021/02/word-image-63.jpeg");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center center;
 }
 
-#Somos-ProNow {
-    display: flex;
-    
-    
+#hero h1{
+    color: white;
+}
+
+#hero button{
+    font-size: 1.75em;
 }
 
 
+
 #Somos-ProNow .container{
-  max-width: 800px;
-  flex-direction: column;
+  text-align: center;
   padding: 200px 10px;
-  width: 60%;
- 
-  
+
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s;
+    border-radius: 12px;
+} 
+
+img:hover{
+    transform: scale(1.1);
 }
 
 #Our-programs{
@@ -132,7 +145,7 @@ header a:hover{
 #Our-programs .letter{
     background-size: cover;
     background-position: center center;
-    padding: 60px;
+    padding: 60px 0px;
     margin: 20px;
     border-radius: 12px;
 } 
@@ -143,7 +156,7 @@ header a:hover{
         rgb(0,0,0,0.5),
         rgb(0,0,0,0.5)
      )
-      ,url("media/shutterstock_1610721214-min.jpg");
+      ,url("https://static.vecteezy.com/system/resources/thumbnails/003/343/387/small_2x/desktop-source-code-and-wallpaper-by-coding-and-programming-free-photo.jpg");
 }
 
 .letter:nth-child(2){
@@ -152,7 +165,7 @@ header a:hover{
         rgb(0,0,0,0.5),
         rgb(0,0,0,0.5)
      )
-      ,url("media/frontend.webp");
+      ,url("https://blogs.unitec.mx/hubfs/Imported_Blog_Media/para-que-sirve-la-programacion-3-compressor.jpg");
 }
 
 .letter:nth-child(3){
@@ -161,16 +174,16 @@ header a:hover{
         rgb(0,0,0,0.5),
         rgb(0,0,0,0.5)
      )
-      ,url("media/python.webp");
+      ,url("https://www.dongee.com/tutoriales/content/images/2023/01/image-47.png");
 }
 
 #features .container{
     text-align: center;
-    padding: 170px 15px;
+    padding: 150px 15px;
 
 }
 #features li{
-    margin: 15px 0px;
+    margin: 30px 0px;
     font-weight: bold;
 }
 
@@ -186,10 +199,10 @@ header a:hover{
 }
 
 #end h2{
-    font-size: 5vw;
+    font-size: 4vw;
 }
 #end button{
-    font-size: 3vw;
+    font-size: 2vw;
 }
 
 footer{
@@ -224,23 +237,60 @@ footer .container{
         padding-right: 20px;
     }
 
+    #hero h1{
+        font-size: 5em;
+    }
     
+    #Somos-ProNow .container{
+       display: flex; 
+       justify-content: space-evenly;
+    }
+
+    #Somos-ProNow .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    #Somos-ProNow h2{
+        margin-top: 0px;
+    }
+    
+    #Somos-ProNow .img-container{
+        height: 500px;
+        width: 400px; 
+    }
+
+    #Our-programs .programs{
+        display: flex;
+        justify-content: center;
+    }
+
+    #Our-programs p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #Our-programs h2{
+        font-size: 4em;
+    }
+
+    #Our-programs h3{
+        margin-top: 0;
+    }
+    
+    #feutures ul{
+        margin-left: 100px;
+    }
+
 }
 
-
-
-#img-container {
-    width: 100%;
-    border-radius: 30px;
-    transition: transform 0.3s ease;
-    width: 100%;
-    max-width: 400px;
-    margin: auto;
-    padding: 10px;
-    overflow: hidden;
-    
-}
-
-#img-container:hover {
-    transform: scale(1.1);
+@media (min-width: 1200px) {
+    #caracteristicas{
+        background-position-x: calc(100vw - 800px);
+    }
 }
